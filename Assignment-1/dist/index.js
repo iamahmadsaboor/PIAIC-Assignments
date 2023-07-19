@@ -61,6 +61,35 @@ console.log(`${Guest[2]} has an important work to do is not available`);
 // • Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
 // • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 // • Print a second set of invitation messages, one for each person who is still in your list.
+Guest[2] = "Talha";
 for (let guest in Guest) {
     console.log(` ${Guest[guest]} You are invited to  a party Hope so we will enjoy it`);
+}
+console.log(`We Have Finded A Bigger Dinner Table ${Guest}`);
+// Question 16: More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
+// • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+// • Add one new guest to the beginning of your array.
+// • Add one new guest to the middle of your array. 
+// • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
+Guest.unshift("Kashif");
+Guest.splice(4, 0, "Amir");
+Guest.push("Sajjad");
+for (let guest in Guest) {
+    console.log(`${Guest[guest]} Well Done You are inited to have a lunch with me`);
+}
+console.log('Alas! Large Table is Not Available Can invite only two people');
+// Question 17: Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+// • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
+// • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
+// • Print a message to each of the two people still on your list, letting them know they’re still invited.
+// • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
+for (let people in Guest) {
+    if (Guest[people].length >= 0) {
+        console.log(`${Guest[people]} Sorry Man you got unselected for the dinner`);
+        Guest.pop();
+        console.log(Guest.length);
+    }
+}
+for (let remPeople in Guest) {
+    console.log(Guest[remPeople]);
 }
