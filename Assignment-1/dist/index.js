@@ -144,4 +144,69 @@ console.log(`The Result with Not Operator`, citizen != 'Ahad' && place != 'chini
 console.log(`The Result with Not Operator`, citizen != 'Ahmad' && place != 'FSD' ? true : false); //false
 console.log("AHMAD" > "Ahmad"); //false as a is greater than A in unicode in unicode a is 97 and A is 65
 console.log("h" > "H"); //true 
-console.log("AhM" > "aHM"); //false 
+console.log(5 > 9 ? "yes 5 is grater than 9" : "5 is smaller than 9");
+console.log("K" > "z" ? "yes K is grater than z" : "K is smaller than z");
+console.log("true" > "false" ? "Yes True is Greater than false" : "No True is Smaller  than false");
+// Question :24 More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// • Tests for equality and inequality with strings
+let smallName = "ahmad";
+let largeName = "Ahmad";
+console.log(smallName == largeName ? "yes small name is large name" : "no small name and large name are different thing"); //becaue a and A are not equal
+// • Tests using the lower case function
+console.log(smallName.toLowerCase() == largeName.toLowerCase() ? "yes they are same" : "no they are not");
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+console.log(5 <= 5.1); //true
+console.log(5 < 5.1); //true
+console.log(5 > 5.1); //false
+console.log(5 >= 5.1); //false
+// • Tests using "and" and "or" operators
+// in or any one must be true
+console.log("age" == 'age' || "name" == "name" ? "Yes its true" : "No Both are falses");
+// in and both must be true
+console.log("age" == 'age' && "name" == "name" ? "Yes its true" : "No any one is falses");
+// • Test whether an item is in a array
+let arrChk = [3, 4, 5, 6];
+console.log(`It is array or not ${arrChk} `, Array.isArray(arrChk)); //true as it is an array
+// • Test whether an item is not in a array
+let chkArr2 = true;
+console.log(`it is an array or not ${chkArr2}`, Array.isArray(chkArr2)); //false it is boolean
+// Question:25 Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+// • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
+// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
+let alien_color = "green";
+console.log(alien_color == "green" || "Green" ? "You earnerd 5 Points" : "Choose a Color");
+// Question:26  Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+// • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+// • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+// • Write one version of this program that runs the if block and another that runs the else block.
+let alien_color2 = "green";
+if (alien_color2 != "green") {
+    console.log("player just earned 10 points");
+}
+else {
+    console.log("You Just Earned 5 Points as your color is green");
+}
+// Question:27 Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+// • If the alien is green, print a message that the player earned 5 points.
+// • If the alien is yellow, print a message that the player earned 10 points.
+// • If the alien is red, print a message that the player earned 15 points.
+// • Write three versions of this program, making sure each message is printed for the appropriate color alien.
+let alien_color3 = 'yellow';
+if (alien_color3 == "green") {
+    console.log('you Just earned 5 points');
+}
+else if (alien_color3 == 'yellow') {
+    console.log('you Just earned 10 points');
+}
+else if (alien_color3 == "red") {
+    console.log('you Just earned 15 points');
+}
+// Question 28 Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+// • If the person is less than 2 years old, print a message that the person is a baby.
+// • If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
+// • If the person is at least 4 years old but less than 13, print a message that the person is a kid.
+// • If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
+// • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
+// • If the person is age 65 or older, print a message that the person is an elder.
+let personAge = 23;
+let personAgeResult = personAge < 2 ? "Person is baby" : personAge >= 2 && personAge < 4 ? "Person is Todler" : personAge;
