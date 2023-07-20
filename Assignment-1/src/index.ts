@@ -355,5 +355,80 @@ if(alien_color3=="green"){
 
 // • If the person is age 65 or older, print a message that the person is an elder.
 
-let personAge:number=23;
-let personAgeResult= personAge<2?"Person is baby":personAge>=2 && personAge<4?"Person is Todler":personAge
+let personAge:number=2;
+let personAgeResult= personAge<2?"Person is baby":personAge>=2 && personAge<4?"Person is Todler":personAge>=4 && personAge<=13?"Person is a kid":personAge>=13 && personAge<20?"Person is a teenager":personAge>=20&&personAge<=65?"Person is an adult":personAge>=65?"Person is an elder":"Enter an age";
+console.log(personAgeResult);
+
+
+
+//Question:29 Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+// • Make a array of your three favorite fruits and call it favorite_fruits.
+
+// • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+let favorite_fruits=['apple',"mango",`banana`];
+
+for(let fruit in favorite_fruits){
+    if(favorite_fruits[fruit]=='pineapple'){
+        console.log(`You really like ${favorite_fruits[fruit]}`);
+    }
+    if(favorite_fruits[fruit]=='tomato'){
+        console.log(`You really like ${favorite_fruits[fruit]}`);
+    }
+    
+    if(favorite_fruits[fruit]=='banana'){
+        console.log(`You really like ${favorite_fruits[fruit]}`);
+    }
+    if(favorite_fruits[fruit]=='apple'){
+        console.log(`You really like ${favorite_fruits[fruit]}`);
+    }
+    if(favorite_fruits[fruit]=='mango'){
+        console.log(`You really like ${favorite_fruits[fruit]}`);
+    }
+
+}
+
+// Question 30 : Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+// • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+
+// • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+
+let usersInArr=['Admin','Ahmad','Saad',"Eric",'Subhan','Ashfaq']
+
+for(let users in usersInArr){
+    if(usersInArr[users]=='Admin'){
+        console.log(`Hello ${usersInArr[users]} , would you like to see a status report?`)
+    }
+    else{
+        console.log(` Hello ${usersInArr[users]} thank you for logging in again.`)
+    }
+}
+
+
+//  Question:31  No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
+// • If the list is empty, print the message We need to find some users!
+
+// • Remove all of the usernames from your array, and make sure the correct message is printed.
+// let usersInArr1=['']
+let usersInArr1=['Admin','Ahmad','Saad',"Eric",'Subhan','Ashfaq']
+
+for(let users in usersInArr1){
+    if(usersInArr1[users]=='Admin'){
+        console.log(`Hello ${usersInArr1[users]} , would you like to see a status report?`)
+    }
+   if (usersInArr[users]== usersInArr[users] && usersInArr[users]!='Admin'){
+        console.log(` Hello ${usersInArr1[users]} thank you for logging in again.`)
+    }
+    else{
+        console.log("We Need Some Users")
+    }
+    
+}
+
+// Question 32: Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
+// • Make a list of five or more usernames called current_users.
+
+// • Make another list of five usernames called new_users. Make sure one or two of the new usernames are also in the current_users list.
+
+// • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
+
+// • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
