@@ -83,33 +83,3 @@ console.log('Alas! Large Table is Not Available Can invite only two people');
 // • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
 // • Print a message to each of the two people still on your list, letting them know they’re still invited.
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
-
-
-
-
-
-
-// Question :18 Seeing the World: Think of at least five places in the world you’d like to visit.
-// • Store the locations in a array. Make sure the array is not in alphabetical order.
-    let placeToVisit=['Murree','Swat','Kalam','Azad Kashmir','Naran','Hunza']
-// • Print your array in its original order.
-        for(let place in placeToVisit){
-            console.log(`${place} is ${placeToVisit[place]}`)
-        }
-// • Print your array in alphabetical order without modifying the actual list.
-
-// • Show that your array is still in its original order by printing it.
-
-// • Print your array in reverse alphabetical order without changing the order of the original list.
-
-// • Show that your array is still in its original order by printing it again.
-
-// • Reverse the order of your list. Print the array to show that its order has changed.
-
-// • Reverse the order of your list again. Print the list to show it’s back to its original order.
-
-// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
-
-// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
-
-

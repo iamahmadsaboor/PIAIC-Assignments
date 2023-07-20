@@ -133,19 +133,12 @@ console.log('Alas! Large Table is Not Available Can invite only two people')
 
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 
-console.log(Guest.length)
-let i:number=Guest.length
-for(let i=Guest.length;i>=2;i--){
-console.log('a')
-    if(Guest[i].length>=2){
-        console.log(`${Guest[i]} Sorry Man you got unselected for the dinner`);
-        Guest.pop()
-        console.log(Guest.length)
-    }
-}
-// if(Guest[i].length<=1){
-//     console.log(Guest[i])
-// }
+
+
+
+
+
+
 
 
 
