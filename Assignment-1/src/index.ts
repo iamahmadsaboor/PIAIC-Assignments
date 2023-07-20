@@ -142,3 +142,120 @@ console.log('Alas! Large Table is Not Available Can invite only two people')
 
 
 
+
+
+// Question:18 Seeing the World: Think of at least five places in the world you’d like to visit.
+// • Store the locations in a array. Make sure the array is not in alphabetical order.
+
+// • Print your array in its original order.
+
+// • Print your array in alphabetical order without modifying the actual list.
+
+// • Show that your array is still in its original order by printing it.
+
+// • Print your array in reverse alphabetical order without changing the order of the original list.
+
+// • Show that your array is still in its original order by printing it again.
+
+// • Reverse the order of your list. Print the array to show that its order has changed.
+
+// • Reverse the order of your list again. Print the list to show it’s back to its original order.
+
+// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+
+// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+
+let placesToVisit=['Hunza','Swat','Malam Jaba','Kalam','Kashmir','BabusarTop']
+console.log(placesToVisit);
+
+// From Low To High Order 
+
+let assendOrder=[...placesToVisit].sort((a,b)=>
+a.localeCompare(b))
+
+console.log('Now it is convert order',assendOrder);
+console.log("This Print is after assend order",placesToVisit);
+
+// From High to Low order we have to localecompare second argument with first argument and pass localeargument function parameter
+
+let desendOrder=[...placesToVisit].sort((a,b)=>
+        b.localeCompare(a))
+console.log("It is converted to descend order",desendOrder);
+
+console.log(`This Print is after desend order`,placesToVisit);
+
+
+
+   
+let orderChg1=placesToVisit.sort((a,b)=>
+        a.localeCompare(b))
+
+console.log('Now it is converted to low to high',orderChg1)
+console.log("Now the Order is Changed After low to high",placesToVisit);
+
+   
+let orderChg2=placesToVisit.sort((a,b)=>
+        b.localeCompare(a))
+        
+        console.log('Now it is converted to low to high',orderChg2)
+console.log("Now the Order is Changed After this High to Low",placesToVisit);
+
+// Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+
+console.log('The Memebers invited to lunch is ',Guest.length);
+
+
+// Question : 20 Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+
+let placesToLive:object={
+    Rivers:["Chenab","Ravi","Satluj","Bias","jehlum"],
+    Mountains:["K2","MountEverset"],
+    Cities:['Faisalabad','Lahore','Quetta','Multan','Rawalakot',"Balakot"],
+    Language:['Urdu','Hindi',`Punjabi`,'English','javascript','python'],
+    Countries:["Pakistan","Sudan","Palestine","DHA","India"]
+}
+
+console.log(placesToLive)
+
+
+// Question 22 : Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+
+let intentionalError=[23,132,432,213,2342,213]
+intentionalError[3]=intentionalError[9]
+const element=intentionalError[3];
+console.log(element);
+
+
+
+// Question 23:Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+
+// let car = 'subaru';
+
+// console.log("Is car == 'subaru'? I predict True.")
+
+// console.log(car == 'subaru')
+
+// • Look closely at your results, and make sure you understand why each line evaluates to True or False.
+
+// • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+
+
+let citizen="Ahmad"
+let place="FSD"
+console.log(citizen=='Ahad'? "True":"False")//true
+console.log(citizen=='Ahmad'? true:false)//true
+console.log(citizen==''? true:false) //false
+console.log(`The Result with OR Operator`,citizen=='Ahmad' || place =='chiniot'? true:false) //true 
+console.log(`The Result with AND Operator`,citizen=='Ahmad' && place =='chiniot'? true:false) //false 
+console.log(`The Result with Not Operator`,citizen!='Ahad' && place !='chiniot'? true:false) //true
+console.log(`The Result with Not Operator`,citizen!='Ahmad' && place !='FSD'? true:false) //false
+console.log("AHMAD">"Ahmad")  //false as a is greater than A in unicode in unicode a is 97 and A is 65
+
+console.log("h">"H") //true 
+console.log("AhM">"aHM") //false 
+
+
+
+
+
