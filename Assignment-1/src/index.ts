@@ -1,5 +1,5 @@
 
-                // First Assignment
+                  // First Assignment
 // https://github.com/panaverse/typescript-node-projects/blob/main/getting-started-exercises.md
 
 
@@ -134,8 +134,19 @@ console.log('Alas! Large Table is Not Available Can invite only two people')
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 
 
-
-
+while (Guest.length > 2) {
+    const removeGuest = Guest.pop()!;
+    console.log(`Sorry ${removeGuest}, Alas! You are not joining us`);
+  }
+  
+  for (const guest of Guest) {
+    console.log(`Dear ${guest}, Congrats still invited to dinner.`);
+  }
+  
+  Guest.pop()
+  Guest.pop()
+  console.log("Removed All elements")
+  console.log(Guest.length,Guest);
 
 
 
@@ -200,13 +211,13 @@ let orderChg2=placesToVisit.sort((a,b)=>
         console.log('Now it is converted to low to high',orderChg2)
 console.log("Now the Order is Changed After this High to Low",placesToVisit);
 
-// Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+// Question 19 :  Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
 
 console.log('The Memebers invited to lunch is ',Guest.length);
 
 
 // Question : 20 Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
-// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+// Question : 21 They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
 
 let placesToLive:object={
     Rivers:["Chenab","Ravi","Satluj","Bias","jehlum"],
@@ -487,3 +498,151 @@ console.log(`Any of these animals would make a great pet!`)
 
 
 // Question : 36 T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
+
+ let make_shirt=(size:string,text:string):any=>{
+    console.log(`The Size is ${size} and the text that should print on shirt is "${text}"`)
+ }
+
+ make_shirt('Large','Main Arha Houn')
+
+// Question : 37 Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+
+let make_shirt1=(size:string='Large',text:string=`I Love TypeScript`):any=>{
+    console.log(`The Size is ${size} and the text that should print on shirt is "${text}"`)
+ }
+make_shirt1()
+ make_shirt1('Medium','I Love TypeScript')
+ make_shirt1('small','Main Houn Kon')
+
+
+//  Question:38 Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+
+let describe_city=(city_name:string='Karachi',country_name:string='Pakistan')=>{
+    console.log(`${city_name} is in ${country_name}`)
+
+}
+describe_city()
+describe_city('Lahore')
+describe_city('New York')
+describe_city('Sydney')
+describe_city('Delhi')
+
+
+// Question:39 City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+
+// "Lahore, Pakistan"
+
+// Call your function with at least three city-country pairs, and print the value that’s returned.
+
+let city_country=(city:string,country:string)=>{
+    console.log(`"${city},${country}"`)
+}
+
+city_country("Faisalabad","Pakistan");
+city_country("Karachi","Pakistan");
+city_country("Lahore","Pakistan");
+
+
+
+// Question:40 Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+
+let make_album=(name:string,album_title:string,numberOfTracks?:number)=>{
+    let music_album={
+        name,
+        album_title,
+        numberOfTracks 
+
+    }
+    return music_album;
+}
+
+let albumOne=make_album('Ahmad','ma houn jawan')
+console.log(albumOne)
+let albumTwo=make_album('subhan','ma houn Koun')
+console.log(albumTwo)
+let albumThree=make_album('Typescript','ma houn static',321)
+console.log(albumThree)
+
+
+
+// Question 41 Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+
+let magician_name=['Zaid','Bakar','Taha','Ahmad']
+
+let show_magicians=()=>{
+    for(let name in magician_name){
+        console.log(magician_name[name])
+    }
+}
+show_magicians()
+
+
+
+// Question 42 Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+let magicianName=['Zaid','Bakar','Taha','Ahmad']
+let copyMagician=magicianName;
+
+let make_great = () => {
+  for(let magician in magicianName){
+    magicianName[magician] = "the Great " + magicianName[magician];
+  }
+}
+
+let show_magician = () => {
+  for(let name in magicianName){
+    console.log(magicianName[name])
+  }
+}
+
+make_great();
+show_magician();
+
+// Question 43:  Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+
+make_great();
+
+let show_magician1 = () => {
+    for(let name in magicianName){
+      console.log(magicianName[name])
+    }
+  }
+
+show_magician1();
+let show_magician2 = () => {
+    for(let name in copyMagician){
+      console.log(copyMagician[name])
+    }
+  }
+
+show_magician2();
+
+// Question 44 :Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
+function makeSandwich(...items: string[]): void {
+    console.log("Making a sandwich with the following items:");
+    items.forEach(item => console.log(`${item}`));
+  }
+  
+  makeSandwich('lettuce', 'mayo');
+  makeSandwich('maxica', 'swiss', 'tomato');
+  makeSandwich(' butter');
+
+
+
+//  Question 45 Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
+
+
+function Carmanufacturer(manufacturer:string,model_name:string,...options:any[]){
+    let  carComponents={
+        manufacturer,
+        model_name,
+        ...options
+    }
+    return carComponents;
+
+}
+
+const first_car= Carmanufacturer('Toyota','Prius',{color:"Black"});
+const second_car= Carmanufacturer('Honda','Civic',{color:"White"});
+console.log(first_car);
+console.log(second_car);
+
