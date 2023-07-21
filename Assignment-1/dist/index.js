@@ -265,3 +265,48 @@ for (let users in usersInArr1) {
 // • Make another list of five usernames called new_users. Make sure one or two of the new usernames are also in the current_users list.
 // • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
 // • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
+let current_users = ['Ahmad', 'Ali', 'Subhan', 'Hadi', 'Hamza', 'Jawad', 'Hammad'];
+let new_users = ['ahMad', 'ali', 'Haider', 'khaliq', 'Taha'];
+for (let user in new_users) {
+    if (current_users[user].toLowerCase() != new_users[user].toLowerCase()) {
+        console.log(current_users[user]);
+        console.log(`${new_users[user]} username is available`);
+    }
+    else {
+        console.log(`${new_users[user]} Username is not available`);
+    }
+}
+// Question 33 :Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+// • Store the numbers 1 through 9 in a array.
+// • Loop through the array.
+// • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
+let ordinal_Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let num in ordinal_Numbers) {
+    if (ordinal_Numbers[num] == 1) {
+        console.log(`${ordinal_Numbers[num]}st`);
+    }
+    else if (ordinal_Numbers[num] == 2) {
+        console.log(`${ordinal_Numbers[num]}nd`);
+    }
+    else if (ordinal_Numbers[num] == 3) {
+        console.log(`${ordinal_Numbers[num]}rd`);
+    }
+    else {
+        console.log(`${ordinal_Numbers[num]}th`);
+    }
+}
+// Question : 34 Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
+// • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
+// • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
+let favPizza = ['HomeTown', 'MalaiBoti', 'Tikka', 'Fajita', 'FireHouse'];
+for (let pizza in favPizza) {
+    console.log(`I Like  ${favPizza[pizza]} `);
+}
+console.log(`I Really Like Pizza`);
+// Question 35 : Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
+let animals = ['cat', 'dog', 'rabit', 'parrot'];
+for (let animy in animals) {
+    console.log(`${animals[animy]} would make a good pet`);
+}
+console.log(`Any of these animals would make a great pet!`);
+// Question : 36 T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
