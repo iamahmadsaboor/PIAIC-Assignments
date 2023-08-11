@@ -70,6 +70,7 @@ let checkTemp = (askTemp) => {
 // Write a program that checks if the given number is  divisible by 3 or 5 or both or not divisible by anyone show output accordingly.
 
 // let diviNumb:number=Number(prompt("Enter a Number to check whether it is diisble by 3 and 5 "))
+
 // let diviNumb: number = 34;
 // let diviNumb1: number = 3;
 // let diviNumb2: number = 5;
