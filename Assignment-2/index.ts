@@ -1,5 +1,26 @@
 // Question 1  - Write a program to convert the temperature from Celsius to Fahrenheit and vice verse.
-
+let tempConvert = (temp, isIn) => {
+  if (isIn == "c" || isIn == "C") {
+    let toFarenheit = ((temp * 9) / 5 + 32).toFixed(2);
+    console.log(
+      `The Temperature in Celcius is ${temp} and By Converting it into Farenheit it is ${toFarenheit}`
+    );
+  } else if (isIn == "f" || isIn == "F") {
+    let toCelcius = (((temp - 32) * 5) / 9).toFixed(2);
+    console.log(
+      `The Temperature in Farenheit is ${temp} and By Converting it into Celcius it is ${toCelcius}`
+    );
+  } else {
+    console.log(
+      "Wrong Input In First Parameter Pass Temperatur and in second pass c if it is in celcius and want to convert to farenheit and vice versa"
+    );
+  }
+};
+tempConvert(23, "c");
+tempConvert(38, "c");
+tempConvert(96, "f");
+tempConvert(106, "f");
+tempConvert(106, "k");
 // Question 2 - Write a program that calculates the percentage.
 
 // Numb will take the number and the percent will take how much percent
@@ -13,7 +34,22 @@ percentNumber(500, 10);
 percentNumber(100, 10);
 
 //  Question 3 - Write a program that converts given number of days in to weeks and days such as 17 days = 2 weeks and 3 days.
-
+let dayToWeekConvert = (askDays) => {
+  if (askDays > 0) {
+    let toDays = askDays % 7;
+    let toweek = Math.floor(askDays / 7);
+    console.log(`${askDays} = ${toweek} weeks and ${toDays} days`);
+  } else {
+    console.log(
+      `${askDays} Is Wrong Input Enter Number of Days Only in positive`
+    );
+  }
+};
+// Giving days as arhument
+dayToWeekConvert(1235);
+dayToWeekConvert(123);
+dayToWeekConvert(2);
+dayToWeekConvert(-21234);
 // Question 4- Write a program that calculates the discount for a product based on its price. If the price is above $100, apply a 10% discount; otherwise, apply a 5% discount.
 let getDiscount = (oldPrice: number) => {
   if (oldPrice >= 100) {
@@ -195,5 +231,3 @@ calcBill(123, 40);
 calcBill(400, 40);
 calcBill(600, 40);
 calcBill(2, 40);
-
-
