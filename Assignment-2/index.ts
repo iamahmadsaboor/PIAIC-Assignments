@@ -3,12 +3,12 @@ let tempConvert = (temp, isIn) => {
   if (isIn == "c" || isIn == "C") {
     let toFarenheit = ((temp * 9) / 5 + 32).toFixed(2);
     console.log(
-      `The Temperature in Celcius is ${temp} and By Converting it into Farenheit it is ${toFarenheit}`
+      `The Temperature in Celcius is ${temp} and By Converting it into Farenheit it is ${toFarenheit}°F`
     );
   } else if (isIn == "f" || isIn == "F") {
     let toCelcius = (((temp - 32) * 5) / 9).toFixed(2);
     console.log(
-      `The Temperature in Farenheit is ${temp} and By Converting it into Celcius it is ${toCelcius}`
+      `The Temperature in Farenheit is ${temp} and By Converting it into Celcius it is ${toCelcius} °C`
     );
   } else {
     console.log(
