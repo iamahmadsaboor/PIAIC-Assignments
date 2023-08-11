@@ -69,4 +69,28 @@ let checkTemp = (askTemp) => {
 
 // Write a program that checks if the given number is  divisible by 3 or 5 or both or not divisible by anyone show output accordingly.
 
+// let diviNumb:number=Number(prompt("Enter a Number to check whether it is diisble by 3 and 5 "))
+// let diviNumb: number = 34;
+// let diviNumb1: number = 3;
+// let diviNumb2: number = 5;
 
+let divisibleChecker = (
+  diviNumb: number,
+  diviNumb1: number,
+  diviNumb2: number
+) => {
+  if (diviNumb % diviNumb1 == 0 || diviNumb % diviNumb2 == 0) {
+    if (diviNumb % diviNumb1 == 0) {
+      console.log(`yes the number is divisble by ${diviNumb1}`);
+    } else if (diviNumb % diviNumb2 == 0) {
+      console.log(`yes the number is divisble by ${diviNumb2}`);
+    } else if (diviNumb % diviNumb1 == 0 && diviNumb % diviNumb2) {
+      console.log(
+        `Yes the number is divisible by ${diviNumb1} and ${diviNumb2}`
+      );
+    } else {
+      console.log(`Wrong Input ${diviNumb}`);
+    }
+  }
+};
+divisibleChecker(30, 3, 5);
