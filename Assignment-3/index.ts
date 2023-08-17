@@ -27,13 +27,4 @@ while (numb <= 10) {
 console.log("--------------------------------------------------------");
 // Create a function that takes a positive integer as parameter and uses a while loop to calculate and return the factorial of that number.
 
-let positiveInteger=(numby:number)=>{
-    while(numby<=0){
-        let fact=1;
-        fact=numby*fact;
-        numby--;
-    }
-}
-console.log(positiveInteger(7))
-
-
+//  Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return the sum of all the numbers in the array.
