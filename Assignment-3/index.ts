@@ -121,3 +121,10 @@ let tempInCelcius = [23, 34, 39, 16];
 temperatureConverter(tempInCelcius);
 
 console.log("-------------------------THE END------------------------");
+
+
+
+
+
+
+
