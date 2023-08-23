@@ -8,7 +8,7 @@ let firstName: string = "Ahmad";
 let lastName: string = "Saboor";
 console.log(`${firstName} ${lastName}`);
 
-// Question: 3 Store 10 numbers in different variables.
+// Question: 3 Store 10 numbers in different variable.
 let numOne: number = 23;
 let numTwo: number = 32;
 let numThree: number = 76;
