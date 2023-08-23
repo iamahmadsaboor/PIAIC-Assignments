@@ -41,7 +41,7 @@ let resultSub = numOne -
     numNine -
     numTen;
 console.log(`The Result of Subtraction is ${resultSub}`);
-//  Part III  - Print the result after multiplying all.
+//  Part III  - Print the result after multiplying all
 let resultMultiply = numOne *
     numTwo *
     numThree *
