@@ -41,15 +41,17 @@ areaOfCircle(199);
 
 // Question 5 - Develop a program that reads a list of grades and uses the splice method to remove failing grades (below 50) from the array.
 
-let arrOfAllGrades: number[] = [23, 43, 83, 54, 99, 67, 88, 50, 1, 43, 49.999];
-let arrOfGoodGrades = arrOfAllGrades.filter((value) => value >= 50);
+let arrOfAllGrades: number[] = [23, 43, 83, 54, 99, 67, 88, 50, 1, 43, 49.999,102];
+let arrOfGoodGrades = arrOfAllGrades.filter(
+  (value) => value >= 50 && value <= 100
+);
 console.log(arrOfGoodGrades);
 
 // Question 6 - Write a program that uses a function to find the largest element in an array of numbers.
 
 let largestElement = (arrOfNumby: number[]) => {
-    let largestElementIs: number=arrOfNumby[0];
-    for (let i in arrOfNumby) {
+  let largestElementIs: number = arrOfNumby[0];
+  for (let i in arrOfNumby) {
     for (let j in arrOfNumby) {
       if (arrOfNumby[i] > arrOfNumby[j]) {
         largestElementIs = arrOfNumby[i];
