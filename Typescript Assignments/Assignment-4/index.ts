@@ -1,5 +1,5 @@
 //  - Question - 1 Develop a program that calculates and prints the sum of the first n even numbers using a for loop.
-// Here we are supposing our n is 30
+// Here we are supposing our n is 30.
 
 let sum = 0;
 for (let val: number = 0; val <= 30; val++) {
