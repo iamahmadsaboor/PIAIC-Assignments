@@ -22,7 +22,7 @@ for (let val in arrNumb) {
   }
 }
 
-// Question 3 - Implement a program that uses a loop to iterate through an array of numbers and remove all the even numbers from them and just leave the odd ones
+// Question 3 - Implement a program that uses a loop to iterate through an array of numbers and remove all the even numbers from them and just leave the odd one's
 
 let numbArray: number[] = [1, 2, 4, 5, 7, 9, 0, 3, 123, 324, 876, 129];
 let newArray: number[] = numbArray.filter((value) => value % 2 !== 0);
