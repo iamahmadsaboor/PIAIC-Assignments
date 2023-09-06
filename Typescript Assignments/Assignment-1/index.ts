@@ -1,94 +1,95 @@
-
-                // First Assignment
+// First Assignment
 // https://github.com/panaverse/typescript-node-projects/blob/main/getting-started-exercises.md
-
 
 // Question 2 : Personal Message- Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
 
-let Name:string="Ahmad Saboor";
-console.log(`Hello ${Name} , would you like to learn some Python today? `)
-
+let Name: string = "Ahmad Saboor";
+console.log(`Hello ${Name} , would you like to learn some Python today? `);
 
 // Question 3: Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 
-let nameInUC=Name.toUpperCase();
-console.log(nameInUC)
+let nameInUC = Name.toUpperCase();
+console.log(nameInUC);
 
-
-let nameinLC=Name.toLowerCase();
+let nameinLC = Name.toLowerCase();
 console.log(nameinLC);
 
 // Question 4: Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks: Albert Einstein once said, “A person who never made a mistake never tried anything new.”
 
-let  famousQuote:string='A person who never made a mistake never tried anything new'
+let famousQuote: string =
+  "A person who never made a mistake never tried anything new";
 
-console.log(`Albert Einstein once said , "${famousQuote}"`)
+console.log(`Albert Einstein once said , "${famousQuote}"`);
 
 // Question 5: Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
 
-let  famous_Person:string='Albert Einstein'
-let message:string=`${famous_Person} once said , "${famousQuote}"`
+let famous_Person: string = "Albert Einstein";
+let message: string = `${famous_Person} once said , "${famousQuote}"`;
 
 // Question 6: Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
 
- let personName:string='\tSubhan \n'
- console.log(personName)
- let trimName:string=personName.trim();
- console.log(trimName); 
-
+let personName: string = "\tSubhan \n";
+console.log(personName);
+let trimName: string = personName.trim();
+console.log(trimName);
 
 // Question 7 and 8 :   Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.You should create four lines that look like this:
 // console.log(5 + 3)
 // Your output should simply be four lines with the number 8 appearing once on each line.
-console.log('The Result of Addition is ',6+2);
-console.log('The Result of Multiplication is' ,4*2);
-console.log('The Result of Division is' ,32/4);
-console.log('The Result of Subtraction is' ,10-2)
+console.log("The Result of Addition is ", 6 + 2);
+console.log("The Result of Multiplication is", 4 * 2);
+console.log("The Result of Division is", 32 / 4);
+console.log("The Result of Subtraction is", 10 - 2);
 
 // Question 9: Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
 
-let favNumber:number=6;
-console.log('Your Favourite Number is',favNumber);
-
+let favNumber: number = 6;
+console.log("Your Favourite Number is", favNumber);
 
 // Question 10 : Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does
 
 // Below will change the string to uppercase
-let nameInUC1=Name.toUpperCase();
-console.log(nameInUC)
-
+let nameInUC1 = Name.toUpperCase();
+console.log(nameInUC);
 
 // Below will change the string to lowercase
-let nameinLC1=Name.toLowerCase();
+let nameinLC1 = Name.toLowerCase();
 console.log(nameinLC);
-
 
 // Question : 11 Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
 
-let friendsArr:string[]=['Ahmad','Saad','Arham','Talha','Subhan','Zaid','Bakar']
-for(let items in friendsArr){
-    console.log(friendsArr[items])
+let friendsArr: string[] = [
+  "Ahmad",
+  "Saad",
+  "Arham",
+  "Talha",
+  "Subhan",
+  "Zaid",
+  "Bakar",
+];
+for (let items in friendsArr) {
+  console.log(friendsArr[items]);
 }
 
 // Question : 12 Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
 
-for(let items in friendsArr){
-    console.log("I am ",friendsArr[items])
+for (let items in friendsArr) {
+  console.log("I am ", friendsArr[items]);
 }
 
 // Question 13 : Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
-let Vehicle:string[]=['Motorcycle','Cycle','Car','Truck']
-for(let veh in Vehicle){
-    console.log(`i Would like to own a ${Vehicle[veh]}`)
+let Vehicle: string[] = ["Motorcycle", "Cycle", "Car", "Truck"];
+for (let veh in Vehicle) {
+  console.log(`i Would like to own a ${Vehicle[veh]}`);
 }
 
 // Question 14 : Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
-let Guest:string[]=['Ahmad','Usama','Zaid','Bakar'];
-for(let guest in Guest){
-    console.log(` ${Guest[guest]} , You are invited to  a party`)
+let Guest: string[] = ["Ahmad", "Usama", "Zaid", "Bakar"];
+for (let guest in Guest) {
+  console.log(` ${Guest[guest]} , You are invited to  a party`);
 }
 
-console.log(`${Guest[2]} has an important work to do is not available` )
+console.log(`${Guest[2]} has an important work to do is not available`);
 
 // Question 15: Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 // • Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
@@ -97,32 +98,36 @@ console.log(`${Guest[2]} has an important work to do is not available` )
 
 // • Print a second set of invitation messages, one for each person who is still in your list.
 
-Guest[2]="Talha"
+Guest[2] = "Talha";
 
-for(let guest in Guest){
-    console.log(` ${Guest[guest]} You are invited to  a party Hope so we will enjoy it`)
+for (let guest in Guest) {
+  console.log(
+    ` ${Guest[guest]} You are invited to  a party Hope so we will enjoy it`
+  );
 }
 
-console.log(`We Have Finded A Bigger Dinner Table ${Guest}`,)
+console.log(`We Have Finded A Bigger Dinner Table ${Guest}`);
 
 // Question 16: More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
 // • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
 
 // • Add one new guest to the beginning of your array.
 
-// • Add one new guest to the middle of your array. 
+// • Add one new guest to the middle of your array.
 
 // • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
 
-Guest.unshift("Kashif")
-Guest.splice(4,0,"Amir")
-Guest.push("Sajjad")
+Guest.unshift("Kashif");
+Guest.splice(4, 0, "Amir");
+Guest.push("Sajjad");
 
-for(let guest in Guest){
-    console.log(`${Guest[guest]} Well Done You are inited to have a lunch with me`)
+for (let guest in Guest) {
+  console.log(
+    `${Guest[guest]} Well Done You are inited to have a lunch with me`
+  );
 }
 
-console.log('Alas! Large Table is Not Available Can invite only two people')
+console.log("Alas! Large Table is Not Available Can invite only two people");
 
 // Question 17: Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 // • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
@@ -133,27 +138,19 @@ console.log('Alas! Large Table is Not Available Can invite only two people')
 
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 
-
 while (Guest.length > 2) {
-    const removeGuest = Guest.pop()!;
-    console.log(`Sorry ${removeGuest}, Alas! You are not joining us`);
-  }
-  
-  for (const guest of Guest) {
-    console.log(`Dear ${guest}, Congrats still invited to dinner.`);
-  }
-  
-  Guest.pop()
-  Guest.pop()
-  console.log("Removed All elements")
-  console.log(Guest.length,Guest);
+  const removeGuest = Guest.pop()!;
+  console.log(`Sorry ${removeGuest}, Alas! You are not joining us`);
+}
 
+for (const guest of Guest) {
+  console.log(`Dear ${guest}, Congrats still invited to dinner.`);
+}
 
-
-
-
-
-
+Guest.pop();
+Guest.pop();
+console.log("Removed All elements");
+console.log(Guest.length, Guest);
 
 // Question:18 Seeing the World: Think of at least five places in the world you’d like to visit.
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
@@ -176,68 +173,63 @@ while (Guest.length > 2) {
 
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 
-let placesToVisit=['Hunza','Swat','Malam Jaba','Kalam','Kashmir','BabusarTop']
+let placesToVisit = [
+  "Hunza",
+  "Swat",
+  "Malam Jaba",
+  "Kalam",
+  "Kashmir",
+  "BabusarTop",
+];
 console.log(placesToVisit);
 
-// From Low To High Order 
+// From Low To High Order
 
-let assendOrder=[...placesToVisit].sort((a,b)=>
-a.localeCompare(b))
+let assendOrder = [...placesToVisit].sort((a, b) => a.localeCompare(b));
 
-console.log('Now it is convert order',assendOrder);
-console.log("This Print is after assend order",placesToVisit);
+console.log("Now it is convert order", assendOrder);
+console.log("This Print is after assend order", placesToVisit);
 
 // From High to Low order we have to localecompare second argument with first argument and pass localeargument function parameter
 
-let desendOrder=[...placesToVisit].sort((a,b)=>
-        b.localeCompare(a))
-console.log("It is converted to descend order",desendOrder);
+let desendOrder = [...placesToVisit].sort((a, b) => b.localeCompare(a));
+console.log("It is converted to descend order", desendOrder);
 
-console.log(`This Print is after desend order`,placesToVisit);
+console.log(`This Print is after desend order`, placesToVisit);
 
+let orderChg1 = placesToVisit.sort((a, b) => a.localeCompare(b));
 
+console.log("Now it is converted to low to high", orderChg1);
+console.log("Now the Order is Changed After low to high", placesToVisit);
 
-   
-let orderChg1=placesToVisit.sort((a,b)=>
-        a.localeCompare(b))
+let orderChg2 = placesToVisit.sort((a, b) => b.localeCompare(a));
 
-console.log('Now it is converted to low to high',orderChg1)
-console.log("Now the Order is Changed After low to high",placesToVisit);
-
-   
-let orderChg2=placesToVisit.sort((a,b)=>
-        b.localeCompare(a))
-        
-        console.log('Now it is converted to low to high',orderChg2)
-console.log("Now the Order is Changed After this High to Low",placesToVisit);
+console.log("Now it is converted to low to high", orderChg2);
+console.log("Now the Order is Changed After this High to Low", placesToVisit);
 
 // Question 19 :  Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
 
-console.log('The Memebers invited to lunch is ',Guest.length);
-
+console.log("The Memebers invited to lunch is ", Guest.length);
 
 // Question : 20 Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
 // Question : 21 They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
 
-let placesToLive:object={
-    Rivers:["Chenab","Ravi","Satluj","Bias","jehlum"],
-    Mountains:["K2","MountEverset"],
-    Cities:['Faisalabad','Lahore','Quetta','Multan','Rawalakot',"Balakot"],
-    Language:['Urdu','Hindi',`Punjabi`,'English','javascript','python'],
-    Countries:["Pakistan","Sudan","Palestine","DHA","India"]
-}
+let placesToLive: object = {
+  Rivers: ["Chenab", "Ravi", "Satluj", "Bias", "jehlum"],
+  Mountains: ["K2", "MountEverset"],
+  Cities: ["Faisalabad", "Lahore", "Quetta", "Multan", "Rawalakot", "Balakot"],
+  Language: ["Urdu", "Hindi", `Punjabi`, "English", "javascript", "python"],
+  Countries: ["Pakistan", "Sudan", "Palestine", "DHA", "India"],
+};
 
-console.log(placesToLive)
-
+console.log(placesToLive);
 
 // Question 22 : Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
 
-let intentionalError=[23,132,432,213,2342,213]
-intentionalError[3]=intentionalError[9]
-const element=intentionalError[3];
+let intentionalError = [23, 132, 432, 213, 2342, 213];
+intentionalError[3] = intentionalError[9];
+const element = intentionalError[3];
 console.log(element);
-
-
 
 // Question 23:Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
 
@@ -251,67 +243,88 @@ console.log(element);
 
 // • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
 
+let citizen = "Ahmad";
+let place = "FSD";
+console.log(citizen == "Ahad" ? "True" : "False"); //true
+console.log(citizen == "Ahmad" ? true : false); //true
+console.log(citizen == "" ? true : false); //false
+console.log(
+  `The Result with OR Operator`,
+  citizen == "Ahmad" || place == "chiniot" ? true : false
+); //true
+console.log(
+  `The Result with AND Operator`,
+  citizen == "Ahmad" && place == "chiniot" ? true : false
+); //false
+console.log(
+  `The Result with Not Operator`,
+  citizen != "Ahad" && place != "chiniot" ? true : false
+); //true
+console.log(
+  `The Result with Not Operator`,
+  citizen != "Ahmad" && place != "FSD" ? true : false
+); //false
+console.log("AHMAD" > "Ahmad"); //false as a is greater than A in unicode in unicode a is 97 and A is 65
 
-let citizen="Ahmad"
-let place="FSD"
-console.log(citizen=='Ahad'? "True":"False")//true
-console.log(citizen=='Ahmad'? true:false)//true
-console.log(citizen==''? true:false) //false
-console.log(`The Result with OR Operator`,citizen=='Ahmad' || place =='chiniot'? true:false) //true 
-console.log(`The Result with AND Operator`,citizen=='Ahmad' && place =='chiniot'? true:false) //false 
-console.log(`The Result with Not Operator`,citizen!='Ahad' && place !='chiniot'? true:false) //true
-console.log(`The Result with Not Operator`,citizen!='Ahmad' && place !='FSD'? true:false) //false
-console.log("AHMAD">"Ahmad")  //false as a is greater than A in unicode in unicode a is 97 and A is 65
+console.log("h" > "H"); //true
 
-console.log("h">"H") //true 
+console.log(5 > 9 ? "yes 5 is grater than 9" : "5 is smaller than 9");
+console.log("K" > "z" ? "yes K is grater than z" : "K is smaller than z");
 
-console.log(5>9?"yes 5 is grater than 9":"5 is smaller than 9")
-console.log("K">"z"?"yes K is grater than z":"K is smaller than z")
-
-console.log("true">"false"?"Yes True is Greater than false":"No True is Smaller  than false")
-
-
+console.log(
+  "true" > "false"
+    ? "Yes True is Greater than false"
+    : "No True is Smaller  than false"
+);
 
 // Question :24 More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
 // • Tests for equality and inequality with strings
-    let smallName:string="ahmad";
-    let largeName:string="Ahmad";
-    console.log(smallName==largeName?"yes small name is large name":"no small name and large name are different thing") //becaue a and A are not equal
+let smallName: string = "ahmad";
+let largeName: string = "Ahmad";
+console.log(
+  smallName == largeName
+    ? "yes small name is large name"
+    : "no small name and large name are different thing"
+); //becaue a and A are not equal
 
 // • Tests using the lower case function
-        console.log(smallName.toLowerCase()==largeName.toLowerCase()?"yes they are same":"no they are not")
-
+console.log(
+  smallName.toLowerCase() == largeName.toLowerCase()
+    ? "yes they are same"
+    : "no they are not"
+);
 
 // • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
-    console.log(5<=5.1); //true
-    console.log(5<5.1);  //true
-    console.log(5>5.1);     //false
-    console.log(5>=5.1);    //false
-
+console.log(5 <= 5.1); //true
+console.log(5 < 5.1); //true
+console.log(5 > 5.1); //false
+console.log(5 >= 5.1); //false
 
 // • Tests using "and" and "or" operators
 // in or any one must be true
-console.log("age"=='age'|| "name"=="name"?"Yes its true":"No Both are falses")
+console.log(
+  "age" == "age" || "name" == "name" ? "Yes its true" : "No Both are falses"
+);
 // in and both must be true
-console.log("age"=='age'&& "name"=="name"?"Yes its true":"No any one is falses")
+console.log(
+  "age" == "age" && "name" == "name" ? "Yes its true" : "No any one is falses"
+);
 // • Test whether an item is in a array
-    let arrChk=[3,4,5,6]
-    console.log(`It is array or not ${arrChk} `,Array.isArray(arrChk)); //true as it is an array
+let arrChk = [3, 4, 5, 6];
+console.log(`It is array or not ${arrChk} `, Array.isArray(arrChk)); //true as it is an array
 // • Test whether an item is not in a array
-let chkArr2=true;
-console.log(`it is an array or not ${chkArr2}`,Array.isArray(chkArr2)) //false it is boolean
-
-
+let chkArr2 = true;
+console.log(`it is an array or not ${chkArr2}`, Array.isArray(chkArr2)); //false it is boolean
 
 // Question:25 Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 // • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
 
 // • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
 
-let alien_color:string= "green"
-console.log(alien_color=="green"||"Green"?"You earnerd 5 Points":"Choose a Color")
-
-
+let alien_color: string = "green";
+console.log(
+  alien_color == "green" || "Green" ? "You earnerd 5 Points" : "Choose a Color"
+);
 
 // Question:26  Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
 // • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
@@ -320,15 +333,13 @@ console.log(alien_color=="green"||"Green"?"You earnerd 5 Points":"Choose a Color
 
 // • Write one version of this program that runs the if block and another that runs the else block.
 
-let alien_color2:string= "green"
+let alien_color2: string = "green";
 
-if(alien_color2!="green"){
-    console.log("player just earned 10 points")
-}else{
-    console.log("You Just Earned 5 Points as your color is green")
-
+if (alien_color2 != "green") {
+  console.log("player just earned 10 points");
+} else {
+  console.log("You Just Earned 5 Points as your color is green");
 }
-
 
 // Question:27 Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
 // • If the alien is green, print a message that the player earned 5 points.
@@ -339,18 +350,14 @@ if(alien_color2!="green"){
 
 // • Write three versions of this program, making sure each message is printed for the appropriate color alien.
 
-let alien_color3:string='yellow';
+let alien_color3: string = "yellow";
 
-if(alien_color3=="green"){
-    console.log('you Just earned 5 points')
-
-}else if(alien_color3=='yellow'){
-
-    console.log('you Just earned 10 points')
-    
-}else if(alien_color3=="red"){
-    console.log('you Just earned 15 points')
-    
+if (alien_color3 == "green") {
+  console.log("you Just earned 5 points");
+} else if (alien_color3 == "yellow") {
+  console.log("you Just earned 10 points");
+} else if (alien_color3 == "red") {
+  console.log("you Just earned 15 points");
 }
 
 // Question 28 Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
@@ -366,36 +373,46 @@ if(alien_color3=="green"){
 
 // • If the person is age 65 or older, print a message that the person is an elder.
 
-let personAge:number=2;
-let personAgeResult= personAge<2?"Person is baby":personAge>=2 && personAge<4?"Person is Todler":personAge>=4 && personAge<=13?"Person is a kid":personAge>=13 && personAge<20?"Person is a teenager":personAge>=20&&personAge<=65?"Person is an adult":personAge>=65?"Person is an elder":"Enter an age";
+let personAge: number = 2;
+let personAgeResult =
+  personAge < 2
+    ? "Person is baby"
+    : personAge >= 2 && personAge < 4
+    ? "Person is Todler"
+    : personAge >= 4 && personAge <= 13
+    ? "Person is a kid"
+    : personAge >= 13 && personAge < 20
+    ? "Person is a teenager"
+    : personAge >= 20 && personAge <= 65
+    ? "Person is an adult"
+    : personAge >= 65
+    ? "Person is an elder"
+    : "Enter an age";
 console.log(personAgeResult);
-
-
 
 //Question:29 Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
 // • Make a array of your three favorite fruits and call it favorite_fruits.
 
 // • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
-let favorite_fruits=['apple',"mango",`banana`];
+let favorite_fruits = ["apple", "mango", `banana`];
 
-for(let fruit in favorite_fruits){
-    if(favorite_fruits[fruit]=='pineapple'){
-        console.log(`You really like ${favorite_fruits[fruit]}`);
-    }
-    if(favorite_fruits[fruit]=='tomato'){
-        console.log(`You really like ${favorite_fruits[fruit]}`);
-    }
-    
-    if(favorite_fruits[fruit]=='banana'){
-        console.log(`You really like ${favorite_fruits[fruit]}`);
-    }
-    if(favorite_fruits[fruit]=='apple'){
-        console.log(`You really like ${favorite_fruits[fruit]}`);
-    }
-    if(favorite_fruits[fruit]=='mango'){
-        console.log(`You really like ${favorite_fruits[fruit]}`);
-    }
+for (let fruit in favorite_fruits) {
+  if (favorite_fruits[fruit] == "pineapple") {
+    console.log(`You really like ${favorite_fruits[fruit]}`);
+  }
+  if (favorite_fruits[fruit] == "tomato") {
+    console.log(`You really like ${favorite_fruits[fruit]}`);
+  }
 
+  if (favorite_fruits[fruit] == "banana") {
+    console.log(`You really like ${favorite_fruits[fruit]}`);
+  }
+  if (favorite_fruits[fruit] == "apple") {
+    console.log(`You really like ${favorite_fruits[fruit]}`);
+  }
+  if (favorite_fruits[fruit] == "mango") {
+    console.log(`You really like ${favorite_fruits[fruit]}`);
+  }
 }
 
 // Question 30 : Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
@@ -403,36 +420,36 @@ for(let fruit in favorite_fruits){
 
 // • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
 
-let usersInArr=['Admin','Ahmad','Saad',"Eric",'Subhan','Ashfaq']
+let usersInArr = ["Admin", "Ahmad", "Saad", "Eric", "Subhan", "Ashfaq"];
 
-for(let users in usersInArr){
-    if(usersInArr[users]=='Admin'){
-        console.log(`Hello ${usersInArr[users]} , would you like to see a status report?`)
-    }
-    else{
-        console.log(` Hello ${usersInArr[users]} thank you for logging in again.`)
-    }
+for (let users in usersInArr) {
+  if (usersInArr[users] == "Admin") {
+    console.log(
+      `Hello ${usersInArr[users]} , would you like to see a status report?`
+    );
+  } else {
+    console.log(` Hello ${usersInArr[users]} thank you for logging in again.`);
+  }
 }
-
 
 //  Question:31  No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
 // • If the list is empty, print the message We need to find some users!
 
 // • Remove all of the usernames from your array, and make sure the correct message is printed.
 // let usersInArr1=['']
-let usersInArr1=['Admin','Ahmad','Saad',"Eric",'Subhan','Ashfaq']
+let usersInArr1 = ["Admin", "Ahmad", "Saad", "Eric", "Subhan", "Ashfaq"];
 
-for(let users in usersInArr1){
-    if(usersInArr1[users]=='Admin'){
-        console.log(`Hello ${usersInArr1[users]} , would you like to see a status report?`)
-    }
-   if (usersInArr[users]== usersInArr[users] && usersInArr[users]!='Admin'){
-        console.log(` Hello ${usersInArr1[users]} thank you for logging in again.`)
-    }
-    else{
-        console.log("We Need Some Users")
-    }
-    
+for (let users in usersInArr1) {
+  if (usersInArr1[users] == "Admin") {
+    console.log(
+      `Hello ${usersInArr1[users]} , would you like to see a status report?`
+    );
+  }
+  if (usersInArr[users] == usersInArr[users] && usersInArr[users] != "Admin") {
+    console.log(` Hello ${usersInArr1[users]} thank you for logging in again.`);
+  } else {
+    console.log("We Need Some Users");
+  }
 }
 
 // Question 32: Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
@@ -443,19 +460,25 @@ for(let users in usersInArr1){
 
 // • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
 
-let current_users=['Ahmad','Ali','Subhan','Hadi','Hamza','Jawad','Hammad'];
-let new_users=['ahMad','ali','Haider','khaliq','Taha'];
+let current_users = [
+  "Ahmad",
+  "Ali",
+  "Subhan",
+  "Hadi",
+  "Hamza",
+  "Jawad",
+  "Hammad",
+];
+let new_users = ["ahMad", "ali", "Haider", "khaliq", "Taha"];
 
-for(let user in new_users){
-    if(current_users[user].toLowerCase()!=new_users[user].toLowerCase()){
-        console.log(current_users[user])
-        console.log(`${new_users[user]} username is available`)
-    }else{
-        console.log(`${new_users[user]} Username is not available`)
-    }
+for (let user in new_users) {
+  if (current_users[user].toLowerCase() != new_users[user].toLowerCase()) {
+    console.log(current_users[user]);
+    console.log(`${new_users[user]} username is available`);
+  } else {
+    console.log(`${new_users[user]} Username is not available`);
+  }
 }
-
-
 
 // Question 33 :Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
 // • Store the numbers 1 through 9 in a array.
@@ -464,69 +487,74 @@ for(let user in new_users){
 
 // • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
 
-let ordinal_Numbers=[1,2,3,4,5,6,7,8,9]
-for(let num in ordinal_Numbers){
-    if(ordinal_Numbers[num]==1){
-        console.log(`${ordinal_Numbers[num]}st`)
-    }else if(ordinal_Numbers[num]==2){
-        console.log(`${ordinal_Numbers[num]}nd`)
-    }
-    else if(ordinal_Numbers[num]==3){
-        console.log(`${ordinal_Numbers[num]}rd`)
-    }else {
-        console.log(`${ordinal_Numbers[num]}th`)
-    }
+let ordinal_Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let num in ordinal_Numbers) {
+  if (ordinal_Numbers[num] == 1) {
+    console.log(`${ordinal_Numbers[num]}st`);
+  } else if (ordinal_Numbers[num] == 2) {
+    console.log(`${ordinal_Numbers[num]}nd`);
+  } else if (ordinal_Numbers[num] == 3) {
+    console.log(`${ordinal_Numbers[num]}rd`);
+  } else {
+    console.log(`${ordinal_Numbers[num]}th`);
+  }
 }
 
 // Question : 34 Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
 // • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
 // • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
 
-let favPizza=['HomeTown','MalaiBoti','Tikka','Fajita','FireHouse']
-for(let pizza in favPizza){
-    console.log(`I Like  ${favPizza[pizza]} `)
+let favPizza = ["HomeTown", "MalaiBoti", "Tikka", "Fajita", "FireHouse"];
+for (let pizza in favPizza) {
+  console.log(`I Like  ${favPizza[pizza]} `);
 }
-console.log(`I Really Like Pizza`)
+console.log(`I Really Like Pizza`);
 
 // Question 35 : Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
 
-let animals=['cat','dog','rabit','parrot']
-for(let animy in animals){
-    console.log(`${animals[animy]} would make a good pet`)
+let animals = ["cat", "dog", "rabit", "parrot"];
+for (let animy in animals) {
+  console.log(`${animals[animy]} would make a good pet`);
 }
-console.log(`Any of these animals would make a great pet!`)
-
+console.log(`Any of these animals would make a great pet!`);
 
 // Question : 36 T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
 
- let make_shirt=(size:string,text:string):any=>{
-    console.log(`The Size is ${size} and the text that should print on shirt is "${text}"`)
- }
+let make_shirt = (size: string, text: string): any => {
+  console.log(
+    `The Size is ${size} and the text that should print on shirt is "${text}"`
+  );
+};
 
- make_shirt('Large','Main Arha Houn')
+make_shirt("Large", "Main Arha Houn");
 
 // Question : 37 Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 
-let make_shirt1=(size:string='Large',text:string=`I Love TypeScript`):any=>{
-    console.log(`The Size is ${size} and the text that should print on shirt is "${text}"`)
- }
-make_shirt1()
- make_shirt1('Medium','I Love TypeScript')
- make_shirt1('small','Main Houn Kon')
-
+let make_shirt1 = (
+  size: string = "Large",
+  text: string = `I Love TypeScript`
+): any => {
+  console.log(
+    `The Size is ${size} and the text that should print on shirt is "${text}"`
+  );
+};
+make_shirt1();
+make_shirt1("Medium", "I Love TypeScript");
+make_shirt1("small", "Main Houn Kon");
 
 //  Question:38 Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
 
-let describe_city=(city_name:string='Karachi',country_name:string='Pakistan')=>{
-    console.log(`${city_name} is in ${country_name}`)
-
-}
-describe_city()
-describe_city('Lahore')
-describe_city('New York')
-describe_city('Sydney')
-describe_city('Delhi')
-
+let describe_city = (
+  city_name: string = "Karachi",
+  country_name: string = "Pakistan"
+) => {
+  console.log(`${city_name} is in ${country_name}`);
+};
+describe_city();
+describe_city("Lahore");
+describe_city("New York");
+describe_city("Sydney");
+describe_city("Delhi");
 
 // Question:39 City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
 
@@ -534,65 +562,62 @@ describe_city('Delhi')
 
 // Call your function with at least three city-country pairs, and print the value that’s returned.
 
-let city_country=(city:string,country:string)=>{
-    console.log(`"${city},${country}"`)
-}
+let city_country = (city: string, country: string) => {
+  console.log(`"${city},${country}"`);
+};
 
-city_country("Faisalabad","Pakistan");
-city_country("Karachi","Pakistan");
-city_country("Lahore","Pakistan");
-
-
+city_country("Faisalabad", "Pakistan");
+city_country("Karachi", "Pakistan");
+city_country("Lahore", "Pakistan");
 
 // Question:40 Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
 
-let make_album=(name:string,album_title:string,numberOfTracks?:number)=>{
-    let music_album={
-        name,
-        album_title,
-        numberOfTracks 
+let make_album = (
+  name: string,
+  album_title: string,
+  numberOfTracks?: number
+) => {
+  let music_album = {
+    name,
+    album_title,
+    numberOfTracks,
+  };
+  return music_album;
+};
 
-    }
-    return music_album;
-}
-
-let albumOne=make_album('Ahmad','ma houn jawan')
-console.log(albumOne)
-let albumTwo=make_album('subhan','ma houn Koun')
-console.log(albumTwo)
-let albumThree=make_album('Typescript','ma houn static',321)
-console.log(albumThree)
-
-
+let albumOne = make_album("Ahmad", "ma houn jawan");
+console.log(albumOne);
+let albumTwo = make_album("subhan", "ma houn Koun");
+console.log(albumTwo);
+let albumThree = make_album("Typescript", "ma houn static", 321);
+console.log(albumThree);
 
 // Question 41 Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
 
-let magician_name=['Zaid','Bakar','Taha','Ahmad']
+let magician_name = ["Zaid", "Bakar", "Taha", "Ahmad"];
 
-let show_magicians=()=>{
-    for(let name in magician_name){
-        console.log(magician_name[name])
-    }
-}
-show_magicians()
-
-
+let show_magicians = () => {
+  for (let name in magician_name) {
+    console.log(magician_name[name]);
+  }
+};
+show_magicians();
 
 // Question 42 Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
-let magicianName=['Zaid','Bakar','Taha','Ahmad']
-let copyMagician=magicianName;
+let magicianName = ["Zaid", "Bakar", "Taha", "Ahmad"];
+let copyMagician = magicianName;
 
 let make_great = () => {
-  for(let magician in magicianName){
+  for (let magician in magicianName) {
     magicianName[magician] = "the Great " + magicianName[magician];
   }
-}
+};
 
 let show_magician = () => {
-  for(let name in magicianName){
-    console.log(magicianName[name])
+  for (let name in magicianName) {
+    console.log(magicianName[name]);
   }
-}
+};
 
 make_great();
 show_magician();
@@ -602,47 +627,46 @@ show_magician();
 make_great();
 
 let show_magician1 = () => {
-    for(let name in magicianName){
-      console.log(magicianName[name])
-    }
+  for (let name in magicianName) {
+    console.log(magicianName[name]);
   }
+};
 
 show_magician1();
 let show_magician2 = () => {
-    for(let name in copyMagician){
-      console.log(copyMagician[name])
-    }
+  for (let name in copyMagician) {
+    console.log(copyMagician[name]);
   }
+};
 
 show_magician2();
 
 // Question 44 :Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
 function makeSandwich(...items: string[]): void {
-    console.log("Making a sandwich with the following items:");
-    items.forEach(item => console.log(`${item}`));
-  }
-  
-  makeSandwich('lettuce', 'mayo');
-  makeSandwich('maxica', 'swiss', 'tomato');
-  makeSandwich(' butter');
+  console.log("Making a sandwich with the following items:");
+  items.forEach((item) => console.log(`${item}`));
+}
 
-
+makeSandwich("lettuce", "mayo");
+makeSandwich("maxica", "swiss", "tomato");
+makeSandwich(" butter");
 
 //  Question 45 Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
 
-
-function Carmanufacturer(manufacturer:string,model_name:string,...options:any[]){
-    let  carComponents={
-        manufacturer,
-        model_name,
-        ...options
-    }
-    return carComponents;
-
+function Carmanufacturer(
+  manufacturer: string,
+  model_name: string,
+  ...options: any[]
+) {
+  let carComponents = {
+    manufacturer,
+    model_name,
+    ...options,
+  };
+  return carComponents;
 }
 
-const first_car= Carmanufacturer('Toyota','Prius',{color:"Black"});
-const second_car= Carmanufacturer('Honda','Civic',{color:"White"});
+const first_car = Carmanufacturer("Toyota", "Prius", { color: "Black" });
+const second_car = Carmanufacturer("Honda", "Civic", { color: "White" });
 console.log(first_car);
 console.log(second_car);
-
