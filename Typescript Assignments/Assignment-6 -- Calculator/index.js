@@ -1,5 +1,6 @@
 import inquirer from "inquirer";
 const calcInput = async () => {
+    // Below Done Object Destructuring
     const { number_1 } = await inquirer.prompt([
         {
             type: "number",
@@ -7,6 +8,7 @@ const calcInput = async () => {
             message: "Please Enter Number 1",
         },
     ]);
+    // Below Done Object Destructuring
     const { number_2 } = await inquirer.prompt([
         {
             type: "number",
@@ -14,6 +16,7 @@ const calcInput = async () => {
             message: "Please Enter Number 2",
         },
     ]);
+    // Below Done Object Destructuring
     const { operator } = await inquirer.prompt([
         {
             type: "list",
