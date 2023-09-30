@@ -2,28 +2,54 @@ import inquirer from "inquirer";
 
 console.log(`Welcome to Heavy Bank To Continue Please Enter Your MPIN  `);
 
-const userData = [
-  {
-    userId: 1,
-    userName: "Ahmad",
-    pin: "1245",
-    balance: 100000000,
-  },
-];
-const { userId, userName, pin, balance } = userData[0];
+const user = {
+  accountNumber: 1234567,
+  userName: "Ahmad",
+  pin: 1245,
+  balance: 100000000,
+};
+
+const { accountNumber, userName, pin, balance } = user;
+
+// User Input
 const answers = inquirer.prompt([
   {
-    type: "string",
-    name: "pin",
+    type: "number",
+    name: "accNumb",
+    message: "Enter Your Account Number",
+  },
+  {
+    type: "number",
+    name: "accPin",
     message: "Enter Your 4 digit pin",
   },
 ]);
+// Balance Checking Functionality
+const balanceChecker = () => {
+  const balcInquirer = inquirer.prompt([
+    {
+      type: "confirm",
+      name: "opt",
+      message: "Do You Want to check the Balance?",
+    },
+  ]);
+  balcInquirer.then((balc) => {
+    const { opt } = balc;
+    if (opt) {
+      console.log("Your Balance is " + balance);
+    } else {
+      console.log("Thank You For Using Heavy Bank");
+    }
+  });
+};
+
+// Main Functionality
 answers.then((answer) => {
-  if (pin == answer.pin && answer.pin == 4) {
+  const { accNumb, accPin } = answer;
+  if (pin == accPin && accountNumber == accNumb) {
     console.log("Welcome " + userName);
+    balanceChecker();
   } else {
-    console.log("Wrong  Pincode");
+    console.log("Wrong");
   }
 });
-
-// console.log(answers);
