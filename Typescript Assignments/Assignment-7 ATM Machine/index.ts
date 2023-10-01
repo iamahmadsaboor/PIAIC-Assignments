@@ -42,6 +42,16 @@ const balanceChecker = () => {
     }
   });
 };
+//  Transaction
+
+const transaction = await inquirer.prompt([
+  {
+    type: "list",
+    name: "trans",
+    message: "What do you want to transact?",
+    choices: ["Withdraw", "Deposit"],
+  },
+]);
 
 // Main Functionality
 answers.then((answer) => {
