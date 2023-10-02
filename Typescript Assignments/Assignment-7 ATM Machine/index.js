@@ -5,8 +5,9 @@ const user = {
     userName: "Ahmad",
     pin: 1245,
     balance: 100000000,
+    transactionRecord: [],
 };
-const { accountNumber, userName, pin, balance } = user;
+const { accountNumber, userName, pin, balance, transactionRecord } = user;
 // Balance Checking Functionality
 const balanceChecker = async () => {
     const balcInquirer = await inquirer.prompt([
@@ -26,7 +27,6 @@ const balanceChecker = async () => {
 };
 //  Transaction
 const performTransaction = async () => {
-    const transactionRecord = [];
     const transaction = await inquirer.prompt([
         {
             type: "list",
@@ -50,7 +50,6 @@ const performTransaction = async () => {
         }
         else {
             console.log("Your Remaining Balance is " + (balance - amount));
-            transactionRecord.push(balance - amount);
         }
     }
     else {
@@ -65,7 +64,6 @@ const performTransaction = async () => {
             const { depAmount } = deposit;
             if (depAmount > 0) {
                 console.log("Your New Balance is " + (balance + depAmount));
-                transactionRecord.push(balance + depAmount);
             }
             else {
                 console.log("Wrong Input");
