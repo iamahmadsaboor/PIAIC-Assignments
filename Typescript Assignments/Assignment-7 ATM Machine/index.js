@@ -1,5 +1,5 @@
 import inquirer from "inquirer";
-console.log(`Welcome to Heavy Bank To Continue Please Enter Your MPIN  `);
+console.log(`Welcome to Heavy Bank. To continue, please enter your MPIN.`);
 const user = {
     accountNumber: 1234567,
     userName: "Ahmad",
@@ -14,29 +14,26 @@ const balanceChecker = async () => {
         {
             type: "confirm",
             name: "opt",
-            message: "Do You Want to check the Balance?",
+            message: "Do you want to check the balance?",
         },
     ]);
     const { opt } = balcInquirer;
     if (opt) {
         console.log("Your Balance is " + balance);
     }
-    else {
-        console.log("Thank You For Using Heavy Bank");
-    }
 };
-//  Transaction
+// Transaction
 const performTransaction = async () => {
     const transaction = await inquirer.prompt([
         {
             type: "list",
             name: "trans",
-            message: "Do You want to perform a transaction",
+            message: "Do you want to perform a transaction?",
             choices: ["Withdraw", "Deposit"],
         },
     ]);
     const { trans } = transaction;
-    if (trans == "Withdraw") {
+    if (trans === "Withdraw") {
         const withdraw = await inquirer.prompt([
             {
                 type: "number",
@@ -50,38 +47,37 @@ const performTransaction = async () => {
         }
         else {
             console.log("Your Remaining Balance is " + (balance - amount));
+            transactionRecord.push(`Withdraw: $${amount}`);
         }
     }
-    else {
-        if (trans == "Deposit") {
-            const deposit = await inquirer.prompt([
-                {
-                    type: "number",
-                    name: "depAmount",
-                    message: "Enter the amount you want to deposit",
-                },
-            ]);
-            const { depAmount } = deposit;
-            if (depAmount > 0) {
-                console.log("Your New Balance is " + (balance + depAmount));
-            }
-            else {
-                console.log("Wrong Input");
-            }
+    else if (trans === "Deposit") {
+        const deposit = await inquirer.prompt([
+            {
+                type: "number",
+                name: "depAmount",
+                message: "Enter the amount you want to deposit",
+            },
+        ]);
+        const { depAmount } = deposit;
+        if (depAmount > 0) {
+            console.log("Your New Balance is " + (balance + depAmount));
+            transactionRecord.push(`Deposit: $${depAmount}`);
+        }
+        else {
+            console.log("Wrong Input");
         }
     }
-    console.log(transactionRecord.length);
     if (transactionRecord.length >= 5) {
         const chkRecord = await inquirer.prompt([
             {
                 type: "confirm",
                 name: "chk",
-                message: "Do you want to check your last 5 transactions",
+                message: "Do you want to check your last 5 transactions?",
             },
         ]);
         const { chk } = chkRecord;
         if (chk) {
-            console.log(transactionRecord);
+            console.log(transactionRecord.slice(-5)); // Display the last 5 transactions
         }
         else {
             console.log("Thank You For Using Heavy Bank");
@@ -100,11 +96,11 @@ const mainFunc = async () => {
         {
             type: "number",
             name: "accPin",
-            message: "Enter Your 4 digit pin",
+            message: "Enter Your 4-digit PIN",
         },
     ]);
     const { accNumb, accPin } = answers;
-    if (pin == accPin && accountNumber == accNumb) {
+    if (pin === accPin && accountNumber === accNumb) {
         console.log("Welcome " + userName);
         setTimeout(async () => {
             await performTransaction();
@@ -121,18 +117,16 @@ const moreTransaction = async () => {
         {
             type: "confirm",
             name: "more",
-            message: "Do you want to perform more transactions",
+            message: "Do you want to perform more transactions?",
         },
     ]);
     const { more } = moreTrans;
-    if (!more) {
+    if (more) {
+        await performTransaction();
+        await moreTransaction();
     }
     else {
-        while (more == true) {
-            await performTransaction();
-            await moreTransaction();
-        }
+        console.log("Thank You For Using Heavy Bank");
     }
 };
-// moreTransaction();
 mainFunc();
