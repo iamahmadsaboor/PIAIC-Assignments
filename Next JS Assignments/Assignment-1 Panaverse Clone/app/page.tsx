@@ -971,6 +971,261 @@ export default function Home() {
         <p className="text-[#606C71] mb-[0.99em] text-[1.1rem]">
           Project Part 2: How to Launch a IDO on Polkastarter
         </p>
+        <p className="text-[#606C71] mb-[0.99em] text-[1.1rem]">
+          Review the list of top fundraising platforms
+          https://cryptorank.io/fundraising-platforms <br /> <br />
+          Your second task of the project is to make a google slides
+          presentation on how to start a IDO on the Polkastarter
+          https://polkastarter.com/ <br /> <br /> Project Part 3: Create a Pako
+          Token <br /> <br /> By creating a token and related contracts, you’ll
+          also learn how to handle money sent to your contracts, which should
+          come in handy if you want to create some kind of paid decentralized
+          service in the future.
+          <br />
+          <br /> Therefore, for the sake of this chapter, let’s imagine that our
+          Pako DApp uses its own coin – the Pako Token. We will create two
+          contracts – one for the token itself and one for the token crowd sale
+          (the ICO). <br />
+          <br />
+          Now Create your own Pako ERC20 Token and deploy it on a testnet. The
+          Token should be to use OpenZeppelin contracts. You will use the
+          Hardhat development environment. Also, write at least twenty automated
+          tests. We will be using Solidity and Typescript for development.{" "}
+          <br />
+          <br />
+          Project Part 4: Develop Crowd Sale Contract
+          <br />
+          <br />
+          This contract will be responsible for allowing users to exchange ETH
+          for our Pako Token. In order to do that we need to set a price for our
+          token (1 ETH = 100 Pako Token) <br />
+          <br />
+          Implement a payable buyToken() function. <br />
+          <br /> Emit a BuyTokens event that will log who’s the buyer, the
+          amount of ETH sent and the amount of Token bought <br />
+          <br />
+          Transfer 75% of the Tokens to the Crowd Sale contract at deployment
+          time. i.e. Right after the contract is deployed, we want the token
+          contract to send 75% of our token supply to it. While 25% remain in
+          our personal “owner” account. <br />
+          <br /> Transfer the ownership of the Crowd Sale contract (at deploy
+          time) to our frontend address so that we are able to withdraw the ETH.{" "}
+          <br />
+          <br />
+          You can use the openzeppelin crowd sale contracts
+          https://docs.openzeppelin.com/contracts/4.x/crowdsales however you
+          will have to update the code to the latest solidity version. <br />
+          <br />
+          Also write extensive tests, for example we will simply send a
+          transaction of 1 ETH from a random account to the contract. After the
+          transaction, we should expect the account to have received Pako, while
+          the contract’s balance should have been reduced. <br />
+          <br /> Note: Before you get started writing the token contract we
+          suggest you review access control
+          https://docs.openzeppelin.com/contracts/4.x/access-control
+          <br />
+          <br /> Project Part 5: Trying it with MetaMask <br />
+          <br />
+          While it’s always good to test your code, it’s often more satisfying
+          to see the results of your work wrapped in a nice UI. Let’s see how we
+          can deploy our contracts and get some Pako tokens into our MetaMask
+          wallet! <br />
+          <br />
+          We start by running our deployment scripts for the test network so
+          that the new token contracts are uploaded and deployed. <br />
+          <br />
+          When it’s done, take note of what addresses the contracts were
+          uploaded to and copy it! <br />
+          <br />
+          Now head to MetaMask, and send a transaction of 1 ETH to the crowd
+          sale contract address. If your MetaMask wallet doesn’t have any
+          ethers, remember that you can use any faucet. <br />
+          <br />
+          After the transaction has been confirmed, you might be confused about
+          why you can’t see any tokens in your wallet. It turns out that you
+          need to manually add the token address in MetaMask in order to
+          “register” it – after all, there are so many tokens out there, there’s
+          no way MetaMask could list them all by default! <br />
+          <br />
+          To do this, open the side menu and click on the “Add token” button to
+          get started: <br />
+          <br />
+          Once you’re on the token page, click on “Add custom token” and paste
+          in the token contract’s address in the address field. <br />
+          <br />
+          After confirming that you want to add the token, you should be able to
+          see your Pako balance right next to your ETH balance in the wallet.
+          How cool! <br />
+          <br />
+          Project Part 6: Trying it with Multisignature Wallets <br />
+          <br />
+          Read
+          https://www.coindesk.com/tech/2020/11/10/multisignature-wallets-can-keep-your-coins-safer-if-you-use-them-right/
+          <br />
+          <br />
+          Now use Gnosis Safe https://gnosis-safe.io/ with multi-sigs to do what
+          you did in the last part. <br />
+          <br />
+          Project Part 7: Sending Tokens using Ethers.js <br />
+          <br />
+          Write a Typescript program to send Pako Token to some friend’s address
+          using Ethers.js. <br />
+          <br />
+          You may follow this tutorial
+          https://ethereum.org/en/developers/tutorials/send-token-etherjs/{" "}
+          <br />
+          <br />
+          Project Part 8 Advance: Create, Deploy, Mint, and Sell a NFT <br />
+          <br />
+          Read this NFT tutorial series
+          https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft/{" "}
+          <br />
+          <br />
+          Create a NFT contract using the [OpenZepplen ERC721 NFT Standard
+          https://docs.openzeppelin.com/contracts/4.x/erc721
+          <br />
+          <br />
+          You may use the Preset ERC721 contract
+          https://docs.openzeppelin.com/contracts/4.x/erc721#Presets <br />
+          <br />
+          Deploy your NFT contract on a testnet, mint it, and view it on the
+          MetaMask wallet and list it on OpenSea Marketplace https://opensea.io/
+          for sale. <br />
+          <br />
+          Implement a ERC721 Market
+          https://ethereum.org/en/developers/tutorials/how-to-implement-an-erc721-market/
+        </p>
+        <h2 className="text-[#159957] text-2xl pb-4 pt-4">
+          Quarter IV Web3 and Metaverse
+        </h2>
+        <h2 className="text-[#159957] text-2xl pb-4 pt-4">
+          MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse
+          Experiences
+        </h2>
+        <p className="text-[#606C71] mb-[0.99em] text-[1.1rem]">
+          Duration: 13 Weeks <br />
+          <br />
+          Course Description: <br />
+          <br />
+          The Web is the Metaverse. The metaverse requires an infrastructure
+          that connects all of the metaverses so that we can travel between
+          them. This is only achievable with open web-based metaverses. The
+          internet and its browsers are magical. Federated but linked
+          experiences connect pages, people, technology, businesses, standards,
+          and nations. It’s unlike anything else. The metaverse should replicate
+          the best qualities of the web - it should just be the web. We just
+          have to extend online responsive design from mobile to desktop to 3D,
+          Augmented Reality, and Virtual Reality. This course will teach you how
+          to build the Open Social Spatial Web with WebXR and WebGPU
+          technologies. <br />
+          <br /> Course Outline: <br />
+          <br />
+          Open Metaverse Web Development
+        </p>
+        <a
+          href="https://github.com/panaverse/metaverse-web"
+          className="text-[1.2em] text-[#1E6BB8] hover:underline "
+        >
+          Open Metaverse Learning Repo
+        </a>{" "}
+        <br />
+        <p className="text-[#606C71] mb-[0.99em] text-[1.1rem]">
+          Blender 3D asset Creation for the Metaverse (Remote Zoom Class) <br />
+          <br />
+          Blender development is being funded by heavyweights in the real-time
+          3D (RT3D) space such as Apple, Unity, AMD, Intel, Meta, NVIDIA, AWS,
+          Epic Games, Adobe, Microsoft, and Decentraland. It is expected to
+          become the standard asset creation tool for metaverse.
+        </p>
+        <a
+          href="https://www.blender.org/download/"
+          className="text-[1.2em] text-[#1E6BB8] hover:underline "
+        >
+          Blender 3+ Download
+        </a>{" "}
+        <br /> <br />
+        <a
+          href="https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD"
+          className="text-[1.2em] text-[#1E6BB8] hover:underline "
+          target="_blank"
+        >
+          Blender 3.0 Beginner Tutorial
+        </a>{" "}
+        <br /> <br />
+        <a
+          href="https://docs.google.com/document/d/1zPBgZAdftWa6WVa7UIFUqW_7EcqOYE0X743RqFuJL3o/edit"
+          className="text-[1.2em] text-[#1E6BB8] hover:underline "
+          target="_blank"
+        >
+          Blender 3.0 Hotkey
+        </a>{" "}
+        <br /> <br />
+        <a
+          href="https://www.packtpub.com/product/blender-3d-by-example-second-edition/9781789612561"
+          className="text-[1.2em] text-[#1E6BB8] hover:underline "
+          target="_blank"
+        >
+          Blender Projects Textbook: Blender by Example 2nd Edition
+        </a>{" "}
+        <br /> <br />
+        <a
+          href="https://www.amazon.com/Complete-Guide-Blender-Graphics-Animation/dp/103212167X/ref=sr_1_5"
+          className="text-[1.2em] text-[#1E6BB8] hover:underline "
+          target="_blank"
+        >
+          Blender Textbook: The Complete Guide to Blender Graphics: Computer
+          Modeling & Animation 7th Edition by John M. Blain{" "}
+        </a>{" "}
+        <br /> <br />
+        <a
+          href="https://www.youtube.com/watch?v=H7T0SzdFHwg"
+          className="text-[1.2em] text-[#1E6BB8] hover:underline "
+          target="_blank"
+        >
+          Best Hardware Performance for Blender Rendering
+        </a>{" "}
+        <br /> <br />
+        <p className="text-[#606C71] mb-[0.99em] text-[1.1rem]">
+          Assignment 1: <br />
+          <br />
+          Build a 3D Donut using Blender 3 as shown in these video tutorials{" "}
+          <br />
+          https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD{" "}
+          <br />
+          <br />
+          Assignment 2: Build a Viking Scene using Blender 3 as shown in chapter
+          2 of the Book [Blender by Example 2nd Edition
+          https://www.packtpub.com/product/blender-3d-by-example-second-edition/9781789612561
+          <br />
+          <br /> Assignment 3: <br />
+          <br />
+          Modeling a Time Machine using Blender 3 as shown in chapters 3 and 4
+          of the Book Blender by Example 2nd Edition
+          https://www.packtpub.com/product/blender-3d-by-example-second-edition/9781789612561{" "}
+          <br />
+          <br />
+          Assignment 4: <br />
+          <br />
+          Build a Modern Kitchen using Blender 3 as shown in chapters 5, 6, and
+          7 of the Book Blender by Example 2nd Edition
+          https://www.packtpub.com/product/blender-3d-by-example-second-edition/9781789612561
+          <br />
+          <br />
+          Assignment 5: <br />
+          <br />
+          Illustrating an Alien Hero with Grease Pencil as shown in chapter 8 of
+          the Book Blender by Example 2nd Edition
+          https://www.packtpub.com/product/blender-3d-by-example-second-edition/9781789612561{" "}
+          <br />
+          <br />
+          Assignment 6: <br />
+          <br />
+          Build a 3D Sword in the Stone using Blender 3 as shown in these video
+          tutorials https://www.youtube.com/watch?v=bpvh-9H8S1g <br />
+          <br />
+          <br />
+          This page was generated by GitHub Pages.
+        </p>
       </div>
     </div>
   );
