@@ -13,6 +13,6 @@
 .greenHeading {
   color: #159957;
   font-size: 2xl;
-  padding-bottom: 4px; /* Adjust as needed */
-  padding-top: 4px; /* Adjust as needed */
+  padding-bottom: 4px;
+  padding-top: 4px;
 }
