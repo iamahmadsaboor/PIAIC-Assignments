@@ -4,9 +4,9 @@ import a from "next/link";
 export default function Home() {
   return (
     <div>
-      <div className="custom-bg">
+      <div className="h-fit w-full md:h-[63vh] custom-bg">
         <div>
-          <h1 className="text-[3.25rem] text-center md:px-[4em] mb-[0.2em] pt-12 font-semibold">
+          <h1 className="text-[3.25rem] text-center px-0 md:px-[4em] mb-[0.2em] pt-12 font-semibold">
             Certified Web 3.0 and Metaverse Developer: A Nationwide Program in
             Karachi, Lahore, Islamabad, and Peshawar
           </h1>
@@ -16,7 +16,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="my-0 mx-auto py-[2rem] px-[6rem] max-w-[64rem]">
+      <div className="my-0 mx-auto py-[2rem]  md:px-[6rem] max-w-fit md:max-w-[64rem]">
         <h1 className=" text-[#159957] text-[2.2em] mb-[1rem]">
           Certified Web 3.0 and Metaverse Developer: A Nationwide Program in
           Karachi, Lahore, Islamabad, and Peshawar
@@ -395,16 +395,17 @@ export default function Home() {
           <li>
             Intro to Node.js, .mjs files, Modules, NPM, import, export, and
             using external modules with npm:
-            https://docs.google.com/presentation/d/1eOLJTN0FyVAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing
-            How to accept user input in your Node.js JavaScript programs, this
-            will allow us to create interactive Node.js console programs using
-            prompt-sync library. The last example in this presentation shows you
-            how to use prompt-sync library in your Node.js programs:
-            https://docs.google.com/presentation/d/1eOLJTN0FyVAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing
-            Note: After this point, we will do all our class work and exercises
-            using Node.js in .mjs files. We will also be able to develop
-            interactive Node.js console programs which will greatly help the
-            students to learn.
+            https://docs.google.com/presentation/d/1eOLJTN0Fy
+            VAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing How to accept
+            user input in your Node.js JavaScript programs, this will allow us
+            to create interactive Node.js console programs using prompt-sync
+            library. The last example in this presentation shows you how to use
+            prompt-sync library in your Node.js programs:
+            https://docs.google.com/presentation/d/1eOLJTN0Fy VAw6l MUvA
+            _XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing Note: After this point,
+            we will do all our class work and exercises using Node.js in .mjs
+            files. We will also be able to develop interactive Node.js console
+            programs which will greatly help the students to learn.
           </li>
           <li>
             Using Arrays and Objects in Node.js Programs (chapter 3 of
@@ -431,8 +432,10 @@ export default function Home() {
           </li>
           <li>JavaScript promises, mastering the asynchronous</li>
         </ol>
-        <p className="text-[#606C71] mb-[1em] text-[1.1rem]">
-          https://www.codingame.com/playgrounds/347/javascript-promises-mastering-the-asynchronous/what-is-asynchronous-in-javascript
+        <p className="text-[#606C71] mb-[1em] md:text-[1.1rem]">
+          https://www.codingame.com/playgrounds/347/javascript
+          -promises-mastering-the-asynchronous/what-is-asynchronous
+          -in-javascript
         </p>
         <p className="text-[#606C71] mb-[1em] text-[1.1rem]">
           New JavaScript Features in ECMAScript 2022 and 2021
@@ -960,9 +963,9 @@ export default function Home() {
           Read How to Launch an IEO
           https://appinventiv.com/blog/how-to-launch-an-ieo/
         </p>
-        <p className="text-[#606C71] mb-[0.99em] text-[1.1rem]">
+        <p className="text-[#606C71] mb-[0.99em] text-xs md:text-[1.1rem]">
           Your first task of the project is to make a google slides presentation
-          on how to start a IEO on the Binance Launch Pad
+          on how to start a IEO on the Binance LaunchPad
           https://www.binance.com/en/support/faq/94ed108ce89d44ab8602aa3c476dfb04
         </p>
         <p className="text-[#606C71] mb-[0.99em] text-[1.1rem]">
