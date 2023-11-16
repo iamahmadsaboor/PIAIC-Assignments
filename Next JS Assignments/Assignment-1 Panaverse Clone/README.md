@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
 
-## Getting Started
+# Panaverse Clone
 
-First, run the development server:
+This project is a clone of [Panaverse](https://www.panaverse.co/) created using Next.js v14. The focus was on replicating the structure and content of the original website, including various HTML tags, media elements, tables, and a contact form.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Website Links
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Panaverse Clone](https://panaverseco-clone.vercel.app/)
+- [About Page](https://assignment-1-panaverse-clone.vercel.app/about)
+- [Contact Page](https://assignment-1-panaverse-clone.vercel.app/contact)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features Implemented
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Structure and Content
 
-## Learn More
+- Utilized all HTML tags as specified in the assignment.
+- Mimicked the structure and content of the Panaverse website.
 
-To learn more about Next.js, take a look at the following resources:
+### Media Elements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Integrated a video directly from YouTube, allowing playback within the website using YouTube's video player.
+- Added a locally hosted video from the machine.
+- Included an image within the content.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Table with Dummy Data
 
-## Deploy on Vercel
+- Created a table populated with dummy data to replicate a sample data presentation.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contact Us Form
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Designed and implemented a contact form to enable user interaction.
+
+## Technology Stack
+
+- **Framework:** Next.js v14
+
+## How to Run Locally
+
+To run the project locally, follow these steps:
+
+1. Clone the repository: `https://github.com/iamahmadsaboor/PIAIC-Assignments/tree/main/Next%20JS%20Assignments/Assignment-1%20Panaverse%20Clone`
+2. Navigate to the project directory: `cd panaverse-clone`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your browser and go to `http://localhost:3000` to view the website.
+
+---
