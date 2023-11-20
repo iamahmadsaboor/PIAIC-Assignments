@@ -6,7 +6,7 @@ This project is a clone of [Panaverse](https://www.panaverse.co/) created using 
 
 ## Website Links
 
-- [Panaverse Clone](https://panaverseco-clone.vercel.app/)
+- [Panaverse Clone](https://assignment-1-panaverse-clone.vercel.app/)
 - [About Page](https://assignment-1-panaverse-clone.vercel.app/about)
 - [Contact Page](https://assignment-1-panaverse-clone.vercel.app/contact)
 
