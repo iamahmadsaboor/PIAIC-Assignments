@@ -1,24 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-import Back1 from "../public/Assets/back1.png";
-import Campus1 from "../public/Assets/Campus1.png";
-import Campus2 from "../public/Assets/Campus2.png";
-import Campus3 from "../public/Assets/Campus3.png";
-import user from "../public/Assets/user.png";
-import food from "../public/Assets/food.png";
-import library from "../public/Assets/libary.png";
-import playground from "../public/Assets/playground.png";
+import Back1 from "../public/img/back1.png";
+import Campus1 from "../public/img/Campus1.png";
+import Campus2 from "../public/img/Campus2.png";
+import Campus3 from "../public/img/Campus3.png";
+import user from "../public/img/user.png";
+import food from "../public/img/food.png";
+import library from "../public/img/libary.png";
+import playground from "../public/img/playground.png";
 export default function Home() {
   return (
     <div>
-      <section className="header relative">
-        <div
-          className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{
-            backgroundImage: `linear-gradient(#517e86c4, #949fdf1a), url(${Back1.src})`,
-          }}
-        ></div>
-
+      <section className="header">
         <div className="text_box">
           <h2>GET READY</h2>
           <p id="headtext">TO DISCOVER CAMPUS</p>
@@ -73,9 +66,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <!-- Course Section End --> */}
-
-      {/* <!-- Campus Section Start--> */}
 
       <section className="campus">
         <div className="PageBlock">
@@ -87,19 +77,19 @@ export default function Home() {
 
         <div className="row">
           <div className="campus-col">
-            <Image src={Campus1} alt="Campus1" width={100} height={100} />
+            <Image src={Campus1} alt="Campus1" width={1000} height={1000} />
             <div className="layer">
               <h3>DELHI</h3>
             </div>
           </div>
           <div className="campus-col">
-            <Image src={Campus2} alt="Campus2" width={100} height={100} />
+            <Image src={Campus2} alt="Campus2" width={1000} height={1000} />
             <div className="layer">
               <h3>HYDERABAD</h3>
             </div>
           </div>
           <div className="campus-col">
-            <Image src={Campus3} alt="Campus3" width={100} height={100} />
+            <Image src={Campus3} alt="Campus3" width={1000} height={1000} />
 
             <div className="layer">
               <h3>MUMBAI</h3>
@@ -120,7 +110,7 @@ export default function Home() {
 
         <div className="row">
           <div className="facilities-col">
-            <Image src={library} alt="Libarary" width={100} height={100} />
+            <Image src={library} alt="Libarary" width={1000} height={1000} />
             <h3>Best Libary</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -128,7 +118,12 @@ export default function Home() {
             </p>
           </div>
           <div className="facilities-col">
-            <Image src={playground} alt="playground" width={100} height={100} />
+            <Image
+              src={playground}
+              alt="playground"
+              width={1000}
+              height={1000}
+            />
 
             <h3>Athletics</h3>
             <p>
@@ -137,7 +132,7 @@ export default function Home() {
             </p>
           </div>
           <div className="facilities-col">
-            <Image src={food} alt="food" width={100} height={100} />
+            <Image src={food} alt="food" width={1000} height={1000} />
 
             <h3>Tasty and Healthy Food</h3>
             <p>
@@ -160,7 +155,7 @@ export default function Home() {
 
         <div className="row">
           <div className="testimonials-col">
-            <Image src={user} alt="user" width={100} height={100} />
+            <Image src={user} alt="user" width={1000} height={1000} />
 
             <div>
               <p>
@@ -178,7 +173,7 @@ export default function Home() {
             </div>
           </div>
           <div className="testimonials-col">
-            <Image src={user} alt="user" width={100} height={100} />
+            <Image src={user} alt="user" width={1000} height={1000} />
 
             <div>
               <p>
@@ -197,9 +192,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <!-- Testimonials Section End --> */}
 
-      {/* <!-- Call To Action Section Start --> */}
       <section className="relative">
         <Image
           src={Back1}

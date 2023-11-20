@@ -1,21 +1,26 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Back1 from "../public/Assets/back1.png";
-import Campus1 from "../public/Assets/Campus1.png";
-import Campus2 from "../public/Assets/Campus2.png";
-import Campus3 from "../public/Assets/Campus3.png";
-import user from "../public/Assets/user.png";
-import food from "../public/Assets/food.png";
-import library from "../public/Assets/libary.png";
-import playground from "../public/Assets/playground.png";
-// import Course2 from "../S"
+import Back1 from "../public/img/back1.png";
+import Course1 from "@/public/img/course1.png";
+import Course2 from "@/public/img/course2.png";
+import Course3 from "@/public/img/course3.png";
+import user from "../public/img/user.png";
+import food from "../public/img/food.png";
+import library from "../public/img/libary.png";
+import playground from "../public/img/playground.png";
 
 type Props = {};
 
 const course = (props: Props) => {
   return (
     <div>
+      <section className="Sub-header relative">
+        <h1 className="absolute inset-0 flex items-center justify-center text-center sm:m-0 ">
+          Our Courses
+        </h1>
+      </section>
+
       <section className="course">
         <h1>Course We Offer</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -57,7 +62,7 @@ const course = (props: Props) => {
 
         <div className="row">
           <div className="facilities-col">
-            {/* <img src="img/course1.png" alt=""/ > */}
+            <Image src={Course1} alt="course1" width={1000} height={1000} />
             <h3>Web Development</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -65,7 +70,8 @@ const course = (props: Props) => {
             </p>
           </div>
           <div className="facilities-col">
-            {/* <Image src={} alt="course2"> */}
+            <Image src={Course2} alt="course2" width={1000} height={1000} />
+
             <h3>Artificial Intelligence</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -73,7 +79,8 @@ const course = (props: Props) => {
             </p>
           </div>
           <div className="facilities-col">
-            {/* <img src="img/course3.png" alt=""> */}
+            <Image src={Course3} alt="course3" width={1000} height={1000} />
+
             <h3>Data Science</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

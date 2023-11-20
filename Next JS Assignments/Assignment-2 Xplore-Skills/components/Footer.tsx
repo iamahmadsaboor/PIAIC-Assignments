@@ -1,6 +1,7 @@
-import React from 'react'
+"use client";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const Footer = (props: Props) => {
   return (
@@ -22,14 +23,14 @@ const Footer = (props: Props) => {
       </div>
       <p>
         Made with <i className="fas fa-heart"></i> by{" "}
-        {/* <a href="index.html">Sagar Developer</a> */}
+        <a href="https://www.iamahmadsaboor.vercel.app">Ahmad</a>
       </p>
       <p>
-        Copyright © 2021 <a href="index.html">Xplore Skill</a>. All Rights
+        Copyright © 2023 <a href="index.html">Xplore Skill</a>. All Rights
         Reserved
       </p>
     </section>
   );
-}
+};
 
-export default Footer
+export default Footer;
