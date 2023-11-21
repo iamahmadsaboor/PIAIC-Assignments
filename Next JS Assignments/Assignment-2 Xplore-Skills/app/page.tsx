@@ -192,28 +192,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className="relative">
-        <Image
-          src={Back1}
-          alt="Background"
-          className="w-[80vw] h-[40vh] ml-32"
-          width={1000}
-          height={1000}
-        />
-        <div className="absolute inset-0 flex items-center justify-center w-[80vw] h-[40vh] ml-32 bg-black bg-opacity-50">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              GET READY FOR A BRIGHT FUTURE
-            </h1>
-            <Link
-              href="#"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full inline-block"
-            >
-              CONTACT US
-            </Link>
-          </div>
-        </div>
+      <section className="cta">
+        <h1>GET READY FOR A BRIGHT FUTURE</h1>
+        <Link href="/contact" className="hero_btn">
+          CONTACT US
+        </Link>
       </section>
     </div>
   );
