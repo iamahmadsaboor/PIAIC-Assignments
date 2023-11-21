@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <section className="Sub-header relative">
+      <section className="Sub-header-Twice relative">
         <h1 className="absolute inset-0 flex items-center justify-center text-center sm:m-0 ">
           Contact Us
         </h1>
