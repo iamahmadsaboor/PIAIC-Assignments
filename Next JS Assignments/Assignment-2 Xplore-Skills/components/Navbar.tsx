@@ -1,7 +1,30 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
+  const showMenu = () => {
+    const navLinks = document.getElementById("navLinks");
+    if (navLinks) {
+      navLinks.style.right = "0";
+    }
+  };
+
+  const hideMenu = () => {
+    const navLinks = document.getElementById("navLinks");
+    if (navLinks) {
+      navLinks.style.right = "-200px";
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("DOMContentLoaded", () => {});
+
+    return () => {
+      document.removeEventListener("DOMContentLoaded", () => {});
+    };
+  }, []);
+
   return (
     <div className="absolute z-10 w-full">
       <nav>
@@ -10,6 +33,7 @@ const Navbar = () => {
           <i className="fab fa-staylinked"></i>kill
         </Link>
         <div className="nav-links" id="navLinks">
+          <i className="fa fa-times" onClick={hideMenu}></i>
           <ul>
             <li>
               <Link href="/">Home</Link>
@@ -28,6 +52,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <i className="fa fa-bars" onClick={showMenu}></i>
       </nav>
     </div>
   );

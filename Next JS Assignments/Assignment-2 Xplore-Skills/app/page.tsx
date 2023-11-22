@@ -20,9 +20,9 @@ export default function Home() {
             consequuntur corrupti sapiente aut p orro
             <br /> esse blanditiis in quae perspiciatis quo.
           </p>
-          <a href="#" className="hero_btn">
+          <Link href="/about" className="hero_btn">
             Visit Us To Know More
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -97,9 +97,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <!-- Campus Section End --> */}
 
-      {/* <!-- Facilities Section Start --> */}
       <section className="facilities">
         <div className="PageBlock">
           <div className="verticalLine"></div>
@@ -142,9 +140,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <!-- Facilities Section End --> */}
 
-      {/* <!-- Testimonials Section Start --> */}
       <section className="testimonials">
         <div className="PageBlock">
           <div className="verticalLine"></div>

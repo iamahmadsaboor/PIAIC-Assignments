@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -31,11 +32,12 @@ const Footer = (props: Props) => {
       </div>
       <p>
         Made with <i className="fas fa-heart"></i> by{" "}
-        <a href="https://www.iamahmadsaboor.vercel.app">Ahmad</a>
+        <a href="https://www.iamahmadsaboor.vercel.app" target="_blank">
+          Ahmad
+        </a>
       </p>
       <p>
-        Copyright © 2023 <a href="index.html">Xplore Skill</a>. All Rights
-        Reserved
+        Copyright © 2023 <Link href="/">Xplore Skill</Link>. All Rights Reserved
       </p>
     </section>
   );
