@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Xplore Skills Website
 
-## Getting Started
+Welcome to the Xplore Skills College website! This repository contains the code for our college website, showcasing information about courses, blog posts, about us, and contact details.
 
-First, run the development server:
+## Website Links
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Home Page](https://xploreskills.vercel.app/)
+- [Courses Offered](https://xploreskills.vercel.app/course)
+- [Blog](https://xploreskills.vercel.app/blog)
+- [About Us](https://xploreskills.vercel.app/about)
+- [Contact](https://xploreskills.vercel.app/contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The website is built using[Next.js](https://nextjs.org/) providing a dynamic and efficient user experience.
 
-## Learn More
+### Styling
 
-To learn more about Next.js, take a look at the following resources:
+We utilize [Tailwind CSS](https://tailwindcss.com/) for modern and responsive styling.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The website is hosted on [Vercel](https://vercel.com/) for seamless deployment and scalability.
 
-## Deploy on Vercel
+## Setup Instructions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the Repository:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/iamahmadsaboor/PIAIC-Assignments/tree/main/Next%20JS%20Assignments/Assignment-2%20Xplore-Skills
+
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Application:**
+   ```bash
+   npm run dev
+   ```
+   Open your browser and go to `http://localhost:3000` to view the website locally.
+
+## Contributing
+
+We welcome contributions to improve our website! Feel free to submit pull requests with enhancements, bug fixes, or new features.
