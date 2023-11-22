@@ -32,7 +32,7 @@ const Footer = (props: Props) => {
       </div>
       <p>
         Made with <i className="fas fa-heart"></i> by{" "}
-        <a href="https://www.iamahmadsaboor.vercel.app" target="_blank">
+        <a href="https://iamahmadsaboor.vercel.app" target="_blank">
           Ahmad
         </a>
       </p>
