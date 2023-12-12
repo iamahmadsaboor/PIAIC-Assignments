@@ -3,6 +3,7 @@ import myBlogs from "../blogData";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const filteredBlogs = myBlogs.filter((item) => params.slug === item.slug);
+
   return (
     <div>
       {filteredBlogs.map((blog) => {
