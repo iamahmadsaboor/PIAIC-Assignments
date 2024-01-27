@@ -51,7 +51,7 @@ export default async function Blogs({ params }: { params: { slug: string } }) {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg">
       <Image
-        src={`https://${post.image}`}
+        src={`https:${post.image}`}
         alt={post.title}
         width={1000}
         height={1000}
